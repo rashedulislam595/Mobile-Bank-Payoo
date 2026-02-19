@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo | Login</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <!-- tailwind + daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome | Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="min-h-screen max-w-md bg-base-200  mx-auto">
+    <div class="w-[200px] mx-auto pt-52 ">
+        <img src="assets/Logo-full.png" alt="">
+    </div>
+    <!-- form -->
+    <div >
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mt-8 mx-auto rounded-2xl">
+            <div class="card-body ">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-medium text-[16px]">Mobile Number</label>
+                    <input id="number-input" type="text" class="input bg-base-200 rounded-full mt-2" maxlength="11" minlength="11" placeholder="Enter your 11 digit number" />
+                    <br>
+                    <label class="label text-neutral font-medium text-[16px]">4 Digit Pin</label>
+                    <input id="pin-input" type="password" class="input bg-base-200 rounded-full mt-2"  maxlength="4" minlength="4" placeholder="Enter 4 Digit Pin" />
+                    
+                    <button id="login-btn" class="btn btn-primary mt-4 text-xl rounded-full ">Login</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/login.js"></script>
+</body>
+
+</html>
