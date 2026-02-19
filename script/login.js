@@ -10,7 +10,7 @@ document.getElementById("login-btn").addEventListener("click",function(){
     const pin = pinInput.value;
 
     // step 3 : matched mobile number & pin 
-    if(number == "01738569322" && pin == "1234"){
+    if(number == "01777722222" && pin == "1234"){
         // step 3.1 ::: matched true::--> alert>>home page 
         alert("Login Successful");
         window.location.assign("./home.html")
